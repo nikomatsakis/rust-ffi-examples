@@ -6,3 +6,12 @@ authors = ["timmonfette1 <monfette.timothy@gmail.com>"]
 [lib]
 name = "double_input"
 crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

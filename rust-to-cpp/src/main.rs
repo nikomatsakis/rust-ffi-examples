@@ -5,6 +5,7 @@ extern {
 }
 
 fn main() {
+    let v = vec![1];
     let input = 4;
     let output = unsafe { triple_input(input) };
     println!("{} * 3 = {}", input, output);
